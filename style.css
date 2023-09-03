@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace&display=swap');
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+}
+
+main {
+    margin-left: auto;
+    margin-right: auto;
+}
+body {
+  margin: 3rem;
+  box-sizing: border-box;
+  font-family: 'Bruno Ace', cursive;
+  background-color: rgb(54, 50, 50);
+  scroll-behavior: smooth;
+  /* background-image: radial-gradient(ellipse at center, rgb(48, 48, 40), red); */
+}
+body > header {
+  width: fit-content;
+  font-size: 5rem;
+  font-weight: 500;
+  letter-spacing: 1rem;
+  margin: 1rem auto 1rem auto;
+  padding: 1rem;
+  color: white;
+  text-align: center;
+  text-shadow: 0px 0px 30px rgb(0, 255, 60);
+  border: 0rem solid yellow;
+  border-radius: 50px;
+  box-shadow: 0px 0px 20px yellow;
+}
+
+.light-saber {
+  display: flex;
+  width: fit-content;
+  height: 26rem;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: flex-end;
+}
+
+.handle {
+  position: relative;
+  width: 10px;
+  height: 60px;
+  background-color: gold;
+}
+
+
+.edge {
+  display: block;
+  position: absolute;
+  width: 7px;
+  height: 0px;
+  top: 0;
+  left: 50%;
+  background-color: white;
+  transform: translateX(-50%) translateY(-100%);
+   border-radius: 40% 40% 0 0;
+  /* box-shadow: 0px 0px 30px 15px green; */
+  transition: .6s;
+}
+
+.handle:hover > .edge {
+    height: 330px;
+    box-shadow: 0px 0px 30px 15px green;
+  }
+
+
+  .colors {
+    width: fit-content;
+    margin: auto;
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 3rem;  
+  }
+
+  #gold header,
+  #fiolet header,
+  #green header,
+  #blue header {
+    font-size: 1rem;
+    letter-spacing: normal;
+    color: white;
+    margin-top: 1rem;
+    padding: .3rem;
+    text-shadow: 0px 0px 30px yellow;
+    border: 1px solid white;
+    border-radius: 16px;
+    cursor: pointer;
+    background-color: rgb(24, 24, 24);
+  }
+
+  #gold header:hover,
+  #fiolet header:hover,
+  #green header:hover,
+  #blue header:hover {
+    background-color: rgb(79, 79, 79);
+  }
+
+
+  #gold::before,
+  #fiolet::before,
+  #green::before,
+  #blue::before {
+    content: "";
+    display: block;
+    width: 1rem;
+    height: 1rem;
+    margin: auto;
+    margin-top: 1rem;
+    background-color: aliceblue;
+    border-radius: 50px;
+  }
+
+
+  #gold::before {
+    box-shadow: 0px 0px 20px 15px rgb(218, 186, 4);
+  }
+  #fiolet::before {
+    box-shadow: 0px 0px 30px 10px rgb(132, 0, 158);
+  }
+  #green::before {
+    box-shadow: 0px 0px 30px 15px green;
+  }
+  #blue::before {
+    box-shadow: 0px 0px 30px 15px rgb(6, 6, 209);
+  }
+
+
+  
